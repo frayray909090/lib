@@ -1,8 +1,7 @@
 _G.Main = {}
-
-		function _G.Main:New(Title)
+	function _G.Main:New(Title)
 	
-	    local ScreenGui = Instance.new("ScreenGui")
+	local ScreenGui = Instance.new("ScreenGui")
         local main = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
         local UIGradient = Instance.new("UIGradient")
