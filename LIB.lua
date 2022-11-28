@@ -1,8 +1,8 @@
 _G.Main = {}
 
-	function _G.Main:New(Title)
+		function _G.Main:New(Title)
 	
-	local ScreenGui = Instance.new("ScreenGui")
+	    local ScreenGui = Instance.new("ScreenGui")
         local main = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
         local UIGradient = Instance.new("UIGradient")
@@ -165,14 +165,14 @@ _G.Main = {}
 	
 	_G.Frame = {}
 	
-	function _G.Frame:CreateButton(Title,Name,Call)
+	function _G.Frame:CreateButton(Title,Call)
 
         local BTNToggle = Instance.new("Frame")
         local tle = Instance.new("TextButton")
         local state = Instance.new("TextLabel")
         local TextButton_2 = Instance.new("TextButton")
 
-		BTNToggle.Name = Name
+		BTNToggle.Name = "BTNToggle"
         BTNToggle.Parent = yes
         BTNToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         BTNToggle.BackgroundTransparency = 1.000
@@ -257,7 +257,7 @@ _G.Main = {}
 		
 	end
 
-    function _G.Frame:CreateToggle(Title,Name,Call)
+    function _G.Frame:CreateToggle(Title,Call)
         local SWITCH = Instance.new("Frame")
         local ToggleBACK = Instance.new("Frame")
         local UICorner_2 = Instance.new("UICorner")
@@ -373,8 +373,7 @@ _G.Main = {}
 	
 	return _G.Frame
 	
-    end
-
-    --End
+    --end
 
 return Main
+end)
