@@ -1,5 +1,6 @@
 _G.Main = {}
-	function _G.Main:New(Title)
+
+function _G.Main:New(Title)
 	
 	local ScreenGui = Instance.new("ScreenGui")
         local main = Instance.new("Frame")
@@ -371,8 +372,6 @@ _G.Main = {}
 		end)
 	
 	return _G.Frame
-	
-    --end
+end
 
 return Main
-end)
