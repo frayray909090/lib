@@ -1,6 +1,6 @@
-_G.Main = {}
+Main = {}
 
-function _G.Main:New(Title)
+function Main:New(Title)
 	
 	local ScreenGui = Instance.new("ScreenGui")
         local main = Instance.new("Frame")
@@ -256,8 +256,10 @@ function _G.Main:New(Title)
 		end)
 		
 	end
+	
+	Frame = {}
 
-    function _G.Frame:CreateToggle(Title,Call)
+    function Frame:CreateToggle(Title,Call)
         local SWITCH = Instance.new("Frame")
         local ToggleBACK = Instance.new("Frame")
         local UICorner_2 = Instance.new("UICorner")
@@ -371,7 +373,7 @@ function _G.Main:New(Title)
 			
 		end)
 	
-	return _G.Frame
+	return Frame
 end
 
 return Main
