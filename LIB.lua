@@ -163,16 +163,16 @@ function Main:New(Title)
     coroutine.wrap(UNJDTG_fake_script)()
 
 	
-	_G.Frame = {}
+	Frame = {}
 	
-	function _G.Frame:CreateButton(Title,Call)
+	function Frame:CreateButton(Title, Call)
 
         local BTNToggle = Instance.new("Frame")
         local tle = Instance.new("TextButton")
         local state = Instance.new("TextLabel")
         local TextButton_2 = Instance.new("TextButton")
 
-		BTNToggle.Name = "BTNToggle"
+	BTNToggle.Name = "BTNToggle"
         BTNToggle.Parent = yes
         BTNToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         BTNToggle.BackgroundTransparency = 1.000
@@ -256,10 +256,8 @@ function Main:New(Title)
 		end)
 		
 	end
-	
-	Frame = {}
 
-    function Frame:CreateToggle(Title,Call)
+    function Frame:CreateToggle(Title, Call)
         local SWITCH = Instance.new("Frame")
         local ToggleBACK = Instance.new("Frame")
         local UICorner_2 = Instance.new("UICorner")
@@ -317,7 +315,7 @@ function Main:New(Title)
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 14.000
 
-		local function WAKA_fake_script() -- TextButton.LocalScript 
+	local function WAKA_fake_script() -- TextButton.LocalScript 
             local script = Instance.new('LocalScript', TextButton)
         
             local BTN = script.Parent.Parent.Parent.BTN
